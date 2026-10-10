@@ -1,0 +1,101 @@
+[
+  {
+    "lead_id": "L-1001",
+    "full_name": "Maria Gonzalez",
+    "email": "maria.gonzalez@example.com",
+    "loan_amount": 385000.0,
+    "credit_score": 742,
+    "annual_income": 118000.0,
+    "property_state": "TX",
+    "loan_type": "purchase",
+    "created_at": "2026-09-01"
+  },
+  {
+    "lead_id": "L-1002",
+    "full_name": "James Carter",
+    "email": "james.carter@example.com",
+    "loan_amount": 212500.0,
+    "credit_score": 688,
+    "annual_income": 76000.0,
+    "property_state": "OK",
+    "loan_type": "refinance",
+    "created_at": "2026-09-01"
+  },
+  {
+    "lead_id": "L-1007",
+    "full_name": "Daniel Kim",
+    "email": "daniel.kim@example.com",
+    "loan_amount": 330000.0,
+    "credit_score": 734,
+    "annual_income": 105000.0,
+    "property_state": "TX",
+    "loan_type": "purchase",
+    "created_at": "2026-09-04"
+  },
+  {
+    "lead_id": "L-1009",
+    "full_name": "Marcus Johnson",
+    "email": "marcus.johnson@example.com",
+    "loan_amount": 415000.0,
+    "credit_score": 756,
+    "annual_income": 131000.0,
+    "property_state": "GA",
+    "loan_type": "refinance",
+    "created_at": "2026-09-05"
+  },
+  {
+    "lead_id": "L-1014",
+    "full_name": "Hannah Schmidt",
+    "email": "hannah.schmidt@example.com",
+    "loan_amount": 365000.0,
+    "credit_score": 745,
+    "annual_income": 112000.0,
+    "property_state": "TX",
+    "loan_type": "refinance",
+    "created_at": "2026-09-07"
+  },
+  {
+    "lead_id": "L-1015",
+    "full_name": "Lucas Silva",
+    "email": "lucas.silva@example.com",
+    "loan_amount": 280000.0,
+    "credit_score": 702,
+    "annual_income": 83000.0,
+    "property_state": "NV",
+    "loan_type": "purchase",
+    "created_at": "2026-09-08"
+  },
+  {
+    "lead_id": "L-1016",
+    "full_name": "Nadia Aliyeva",
+    "email": "nadia.aliyeva@example.com",
+    "loan_amount": 405000.0,
+    "credit_score": 768,
+    "annual_income": 128000.0,
+    "property_state": "TX",
+    "loan_type": "purchase",
+    "created_at": "2026-09-08"
+  },
+  {
+    "lead_id": "L-1018",
+    "full_name": "Chloe Martin",
+    "email": "chloe.martin@example.com",
+    "loan_amount": 318000.0,
+    "credit_score": 729,
+    "annual_income": 96000.0,
+    "property_state": "DC",
+    "loan_type": "refinance",
+    "created_at": "2026-09-09"
+  },
+  {
+    "lead_id": "L-1019",
+    "full_name": "Ryan O'Connor",
+    "email": "ryan.oconnor@example.com",
+    "loan_amount": 262000.0,
+    "credit_score": 684,
+    "annual_income": 69000.0,
+    "property_state": "MA",
+    "loan_type": "purchase",
+    "created_at": "2026-09-10"
+  }
+]

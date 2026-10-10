@@ -1,0 +1,21 @@
+lead_id,full_name,email,loan_amount,credit_score,annual_income,property_state,loan_type,created_at
+L-1001,Maria Gonzalez,maria.gonzalez@example.com,385000,742,118000,TX,purchase,2026-09-01
+L-1002,James Carter,james.carter@example.com,212500,688,76000,OK,refinance,2026-09-01
+L-1003,Aisha Rahman,aisha.rahman@example,450000,801,152000,CA,purchase,2026-09-02
+L-1004,Tom Nguyen,tom.nguyen@example.com,-50000,715,98000,WA,purchase,2026-09-02
+L-1005,Priya Patel,priya.patel@example.com,620000,905,210000,NY,purchase,2026-09-03
+L-1006,,noname@example.com,275000,660,64000,FL,refinance,2026-09-03
+L-1007,Daniel Kim,daniel.kim@example.com,330000,734,105000,TX,purchase,2026-09-04
+L-1008,Elena Popova,elena.popova@example.com,190000,701,58000,ZZ,purchase,2026-09-04
+L-1009,Marcus Johnson,marcus.johnson@example.com,415000,756,131000,GA,refinance,2026-09-05
+L-1010,Sofia Rossi,sofia.rossi@example.com,299000,690,87000,IL,home-equity,2026-09-05
+L-1011,Omar Haddad,omar.haddad@example.com,510000,778,176000,CO,purchase,2026-09-31
+L-1012,Grace Lee,grace.lee@example.com,245000,,71000,AZ,purchase,2026-09-06
+L-1013,Ethan Brooks,ethan.brooks@example.com,three hundred thousand,720,99000,NC,purchase,2026-09-06
+L-1014,Hannah Schmidt,hannah.schmidt@example.com,365000,745,112000,TX,refinance,2026-09-07
+L-1007,Daniel Kim,daniel.kim@example.com,330000,734,105000,TX,purchase,2026-09-07
+L-1015,Lucas Silva,lucas.silva@example.com,280000,702,83000,NV,purchase,2026-09-08
+L-1016,Nadia Aliyeva,nadia.aliyeva@example.com,405000,768,128000,TX,purchase,2026-09-08
+L-1017,Ben Carter,ben.carter@example.com,5500000,790,950000,CA,purchase,2026-09-09
+L-1018,Chloe Martin,chloe.martin@example.com,318000,729,96000,DC,refinance,2026-09-09
+L-1019,Ryan O'Connor,ryan.oconnor@example.com,262000,684,69000,MA,purchase,2026-09-10

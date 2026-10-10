@@ -1,0 +1,29 @@
+{
+  "input_file": "data/leads_sample.csv",
+  "total_rows": 20,
+  "valid_rows": 9,
+  "invalid_rows": 11,
+  "errors_by_field": {
+    "created_at": 1,
+    "credit_score": 2,
+    "email": 1,
+    "full_name": 1,
+    "lead_id": 1,
+    "loan_amount": 3,
+    "loan_type": 1,
+    "property_state": 1
+  },
+  "errors": [
+    {"row": 4, "lead_id": "L-1003", "field": "email"},
+    {"row": 5, "lead_id": "L-1004", "field": "loan_amount"},
+    {"row": 6, "lead_id": "L-1005", "field": "credit_score"},
+    {"row": 7, "lead_id": "L-1006", "field": "full_name"},
+    {"row": 9, "lead_id": "L-1008", "field": "property_state"},
+    {"row": 11, "lead_id": "L-1010", "field": "loan_type"},
+    {"row": 12, "lead_id": "L-1011", "field": "created_at"},
+    {"row": 13, "lead_id": "L-1012", "field": "credit_score"},
+    {"row": 14, "lead_id": "L-1013", "field": "loan_amount"},
+    {"row": 16, "lead_id": "L-1007", "field": "lead_id"},
+    {"row": 19, "lead_id": "L-1017", "field": "loan_amount"}
+  ]
+}
