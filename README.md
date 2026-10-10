@@ -1,8 +1,9 @@
 # Lead Intake CLI
 
-Reads the nightly leads CSV exported from Excel, validates every row, and writes two JSON files:
+Reads the nightly leads CSV exported from Excel, validates every row, and writes three files:
 
 - `valid_leads.json`: the clean, normalized, correctly typed leads, ready for the CRM.
+- `errors.csv`: every error as a spreadsheet row (`row, lead_id, field, message`), opens directly in Excel.
 - `report.json`: counts, errors per field, and every error with its row number, so the web team can fix the source data.
 
 Bad rows never stop the run. They are reported, not crashed on.
@@ -34,7 +35,7 @@ python -m lead_intake INPUT [--output-dir DIR] [--strict]
 | Argument | Meaning |
 |---|---|
 | `INPUT` | Path to the CSV file (required) |
-| `--output-dir DIR` | Where to write the JSON files. Created if missing. Default: `out` |
+| `--output-dir DIR` | Where to write the output files. Created if missing. Default: `out` |
 | `--strict` | Exit with code 2 if any row is invalid (for schedulers that should alert on bad data) |
 
 ### Exit codes
@@ -113,11 +114,12 @@ Each error carries a plain-language message the web team reads every morning.
   "valid_rows": 9,
   "invalid_rows": 11,
   "errors_by_field": {"created_at": 1, "credit_score": 2, "email": 1, "loan_amount": 3},
+  "by_state": {"DC": 1, "GA": 1, "MA": 1, "NV": 1, "OK": 1, "TX": 4},
   "errors": [ {"row": 4, "lead_id": "L-1003", "field": "email", "message": "..."} ]
 }
 ```
 
-`invalid_rows` counts rows, `errors` counts problems: a row with two problems adds 1 and 2. `errors_by_field` lists only fields with at least one error, keys sorted A to Z.
+`invalid_rows` counts rows, `errors` counts problems: a row with two problems adds 1 and 2. `errors_by_field` lists only fields with at least one error, keys sorted A to Z. `by_state` counts **valid** leads per state, also sorted.
 
 `out/valid_leads.json`: array of valid leads in file order, each with exactly the 9 columns, typed as in the table above.
 

@@ -24,5 +24,15 @@ def write_json(path, name, data):
         json.dump(data, file, indent=2)
 
 
+def write_csv(path, name, rows, fieldnames):
+    logger.debug("Writing %s", name)
+    check_path_and_create(path)
+    # utf-8-sig: Excel only reads UTF-8 correctly when the file starts with a BOM
+    with open(path / name, "w", encoding="utf-8-sig", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def check_path_and_create(path: Path):
     path.mkdir(parents=True, exist_ok=True)

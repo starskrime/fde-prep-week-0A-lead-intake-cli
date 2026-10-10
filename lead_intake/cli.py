@@ -6,7 +6,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from .io_utils import read_rows, write_json
+from .io_utils import read_rows, write_csv, write_json
 from .validation import validate_rows
 
 load_dotenv()
@@ -39,6 +39,7 @@ def main():
     result = validate_rows(rows)
 
     write_json(args.output_dir, "valid_leads.json", result["valid"])
+    write_csv(args.output_dir, "errors.csv", result["errors"], ["row", "lead_id", "field", "message"])
     write_json(args.output_dir, "report.json", build_report(run_at, args.input, result))
 
     logger.info("%s rows: %s valid, %s invalid. Wrote %s",
@@ -55,5 +56,6 @@ def build_report(run_at, path, result):
         "valid_rows": result["valid_rows"],
         "invalid_rows": result["invalid_rows"],
         "errors_by_field": result["errors_by_field"],
+        "by_state": result["by_state"],
         "errors": result["errors"],
     }

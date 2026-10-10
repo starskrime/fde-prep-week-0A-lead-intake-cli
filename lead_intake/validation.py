@@ -152,11 +152,13 @@ def validate_rows(rows):
         logger.debug("Row %s (%s): %s", row_number, lead_id or "no id", status)
 
     errors_by_field = Counter(sorted(el["field"] for el in errors))  # sorted first -> keys A to Z
+    by_state = Counter(sorted(lead["property_state"] for lead in valid))
 
     return {"total_rows": len(rows),
             "valid_rows": len(valid),
             "invalid_rows": len(rows) - len(valid),
             "errors_by_field": errors_by_field,
+            "by_state": by_state,
             "errors": errors,
             "valid": valid
             }
